@@ -52,7 +52,7 @@
 	border-color: #ccc;
 }
 .btn-login {
-	background-color: #59B2E0;
+	background-color: rgb(69,173,168);
 	outline: none;
 	color: #fff;
 	font-size: 14px;
@@ -60,7 +60,7 @@
 	font-weight: normal;
 	padding: 14px 0;
 	text-transform: uppercase;
-	border-color: #59B2E6;
+	border-color: rgb(69,173,168);
 }
 .btn-login:hover,
 .btn-login:focus {

@@ -20,7 +20,8 @@
                   width:100%;
                   height:100%;
                   box-sizing:border-box;
-                  background-color: lightblue;
+                  background:url('images/495.jpg');
+                  background-position: center center;
               }
               #override-container{
                   margin-top: 50px;
@@ -45,7 +46,7 @@
               }
               
               #override-panel{
-                  background-color: orange;
+                  
               }
               
           </style>
@@ -53,6 +54,7 @@
     </head>
     <body>
        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <div style="background-color:rgba(0,255,0,0.2);width:100%;height:100%">
 <div id="flipkart-navbar">
     <div class="container">
         <div class="row row1"></div>
@@ -61,8 +63,8 @@
         -->
         <div class="row row2">
             <div class="col-sm-2">
-                <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ Brand</span></h2>
-                <h1 style="margin:0px;"><span class="fa fa-shopping-cart" style="font-size:1em;"> <span id="brand-name">my website</span></span></h1>
+                <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ my website</span></h2>
+                <h1 style="margin:0px" class="hidden-xs"><span class="fa fa-shopping-cart" style="font-size:1em;"> <span id="brand-name">my website</span></span></h1>
             </div>
             <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
                 <div class="row">
@@ -119,6 +121,7 @@
         <div w3-include-html="login_register/login_register.html"></div>
             
         </div>
+            </div>
             
         
       
