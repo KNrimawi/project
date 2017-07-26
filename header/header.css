@@ -83,6 +83,10 @@
     border: none;
     outline: none;
     font-size: 12px;
+    
+}
+.upper-links a:hover{
+    color:rgb(157,224,173);
 }
 
 .dropdown {

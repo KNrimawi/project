@@ -1,0 +1,35 @@
+              body,html{
+                  width:100%;
+                  height:100%;
+                  box-sizing:border-box;
+                  background:url('../images/495.jpg');
+                  background-position: center center;
+              }
+              #override-container{
+                  margin-top: 50px;
+              }
+              @font-face{
+                  font-family:curly;
+                  src:url("../fonts/JandaCurlygirlChunky.ttf");
+              }
+              #brand-name{
+                  
+                  font-family:curly;
+              }
+              @media screen and (min-width : 1200px){
+                  #brand-name{
+                      font-size:0.6em;
+                  }
+              }
+              @media screen and (min-width:992px) and (max-width:1199px){
+                  #brand-name{
+                      font-size:0.5em;
+                  }
+              }
+               @media screen and (min-width:768px) and (max-width:991px){
+                  #brand-name{
+                      font-size:0.37em;
+                  }
+              }
+              
+              
