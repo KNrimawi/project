@@ -1,9 +1,7 @@
-              body,html{
-                  width:100%;
-                  height:100%;
-                  box-sizing:border-box;
-                  background:url('../images/495.jpg');
-                  background-position: center center;
+              body{
+
+                  background:url('../images/bg.png');
+                  background-position: center;
               }
               #override-container{
                   margin-top: 50px;
@@ -13,23 +11,52 @@
                   src:url("../fonts/JandaCurlygirlChunky.ttf");
               }
               #brand-name{
-                  
+
                   font-family:curly;
               }
               @media screen and (min-width : 1200px){
                   #brand-name{
                       font-size:0.6em;
                   }
+                  #error-message{
+                      font-size: 1em;
+                  }
+                   #error-message-register{
+                      font-size: 1em;
+                  }
               }
               @media screen and (min-width:992px) and (max-width:1199px){
                   #brand-name{
                       font-size:0.5em;
+                  }
+                  #error-message{
+                      font-size: 0.8em;
+                  }
+                   #error-message-register{
+                      font-size: 0.8em;
                   }
               }
                @media screen and (min-width:768px) and (max-width:991px){
                   #brand-name{
                       font-size:0.37em;
                   }
+                   #error-message{
+                       font-size: 0.9em;
+                   }
+                    #error-message-register{
+                       font-size: 0.9em;
+                   }
               }
-              
-              
+                @media screen and (max-width:768px) and (min-width:0px){
+
+                   #error-message{
+                       font-size: 0.8em;
+                   }
+                     #error-message-register{
+                       font-size: 0.8em;
+                   }
+              }
+              .parsley-errors-list .parsley-required,.parsley-errors-list .parsley-type,
+              .parsley-errors-list .parsley-minlength,.parsley-errors-list .parsley-equalto{
+                color:red;
+              }

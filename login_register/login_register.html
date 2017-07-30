@@ -20,11 +20,13 @@
 							<div class="col-lg-12">
 								<form id="login-form"  role="form" style="display: block;">
 									<div class="form-group">
-										<input type="text" name="username" id="username-login" tabindex="1" class="form-control" placeholder="Username" value="">
-                                        
+										<input type="text" name="username" id="username-login" tabindex="1" class="form-control" placeholder="Username" value=""
+                     data-parsley-required="true" data-parsley-required-message="This field is required.">
+
 									</div>
 									<div class="form-group">
-										<input type="password" name="password" id="password-login" tabindex="2" class="form-control" placeholder="Password">
+										<input type="password" name="password" id="password-login" tabindex="2" class="form-control" placeholder="Password"
+                     data-parsley-required="true" data-parsley-required-message="This field is required.">
 									</div>
 									<div class="form-group text-center">
 										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
@@ -33,7 +35,7 @@
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
-												<input type="button"  name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Sign in">
+												<input type="button" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Sign in">
 											</div>
 										</div>
 									</div>
@@ -45,20 +47,34 @@
 												</div>
 											</div>
 										</div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div>
+                                                    <p style="color:red" id="error-message"></p>
+                                                </div>
+                                            </div>
+                                        </div>
 									</div>
 								</form>
 								<form id="register-form" role="form" style="display: none;">
 									<div class="form-group">
-										<input type="text" name="username" id="username-register" tabindex="1" class="form-control" placeholder="Username" value="">
+										<input type="text" name="username" id="username-register" tabindex="1" class="form-control"
+                     placeholder="Username" value="" data-parsley-required="true"
+                      data-parsley-required-message="This field is required.">
 									</div>
 									<div class="form-group">
-										<input type="email" name="email" id="email-register" tabindex="1" class="form-control" placeholder="Email Address" value="">
+										<input type="email" name="email" id="email-register" tabindex="1" class="form-control" placeholder="Email Address" value=""
+                     data-parsley-required="true" data-parsley-type="email" data-parsley-required-message="This field is required.">
 									</div>
 									<div class="form-group">
-										<input type="password" name="password" id="password-register" tabindex="2" class="form-control" placeholder="Password">
+										<input type="password" name="password" id="password-register" tabindex="2" class="form-control" placeholder="Password" \
+                    minlength="8" data-parsley-required="true" data-parsley-minlength="8" data-parsley-minlength-message="Password must contain 8 characters at least."
+                    data-parsley-required-message="This field is required.">
 									</div>
 									<div class="form-group">
-										<input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+										<input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password"
+                     data-parsley-required="true" data-parsley-equalto="#password-register"
+                     data-parsley-equalto-message="Password doesn't match." data-parsley-required-message="This field is required.">
 									</div>
 									<div class="form-group">
 										<div class="row">
@@ -66,6 +82,13 @@
 												<input type="button" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Sign up">
 											</div>
 										</div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div>
+                                                    <p style="color:red" id="error-message-register" style="color:red"></p>
+                                                </div>
+                                            </div>
+                                        </div>
 									</div>
 								</form>
 							</div>
@@ -75,8 +98,3 @@
 			</div>
 		</div>
 	</div>
-        
-   
-       
-       
-
